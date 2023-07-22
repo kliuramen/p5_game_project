@@ -34,21 +34,17 @@ function draw() {
     if (state == 1) {
         background(255, 255, 255);
 
-
         // Road
         fill(0, 0, 0);
         rect(0, 450, 1000, 50);
-
 
         // Yellow Boxes
         fill(255, 255, 0);
         rect(30, 20, 55, 55);
 
-
         // Chicken
         image(chickImage, 100, chickYPos, 50, 50);
         //rect(100, chickYPos, 50, 50);
-
 
         //if the sprite is off the ground, the sprite will move down
         if (chickYPos <= 410) {
@@ -132,6 +128,7 @@ function mouseClicked() {
         if (mouseX > 150 && mouseX < 350 && mouseY < 500 && mouseY > 300) {
             state = 1;
             obstacleXPos = 1050;
+            score = 0;
         }
     }
 }
