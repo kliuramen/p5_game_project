@@ -129,6 +129,7 @@ function mouseClicked() {
             state = 1;
             obstacleXPos = 1050;
             score = 0;
+            mapSpeed = 1;
         }
     }
 }
